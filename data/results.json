@@ -1,0 +1,374 @@
+{
+  "1": {
+    "id": 1,
+    "category": "order",
+    "message": "Where is my order #1042?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status",
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 3.76,
+    "reply": "I've checked on order #1042 for the Wireless Headphones, and I see that it is currently delayed (it was expected 3 days ago). I have created a support ticket (Ticket ID: T-0001) to look into this delay for you. \n\nPlease let me know if there's anything else I can help you with!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "2": {
+    "id": 2,
+    "category": "order",
+    "message": "Can you check order 1043 for me?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 1.63,
+    "reply": "Order 1043 is currently shipped and is expected to be delivered tomorrow. The item in this order is a Phone Case. \n\nPlease let me know if you need help with anything else!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "3": {
+    "id": 3,
+    "category": "order",
+    "message": "Has order #1044 been delivered?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 1.53,
+    "reply": "Yes, order #1044 (Laptop Stand) was delivered yesterday! Let me know if you need help with anything else.",
+    "model": "gemini-flash-lite-latest"
+  },
+  "4": {
+    "id": 4,
+    "category": "order",
+    "message": "Track my order 1042 please",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 1.7,
+    "reply": "Your order #1042 for Wireless Headphones was expected to be delivered 3 days ago and is currently marked as delayed. \n\nPlease let me know if you would like me to create a support ticket to look into this delay further.",
+    "model": "gemini-flash-lite-latest"
+  },
+  "5": {
+    "id": 5,
+    "category": "order",
+    "message": "What's the status of order #9999?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 1.65,
+    "reply": "I'm sorry, but I couldn't find any order with the number #9999. Could you please double-check your order number and provide it again?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "6": {
+    "id": 6,
+    "category": "order",
+    "message": "My order #1043 hasn't come yet, when will it arrive?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 1.58,
+    "reply": "Your order #1043 (Phone Case) has been shipped and is expected to arrive tomorrow! \n\nLet me know if there's anything else I can help you with. Have a great day!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "7": {
+    "id": 7,
+    "category": "order",
+    "message": "I ordered headphones, order number 1042, where are they?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status",
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 2.8,
+    "reply": "I checked the status of your order (number 1042) for the Wireless Headphones. It looks like your package is currently delayed, and it was expected to arrive 3 days ago. \n\nTo help get this resolved quickly, I have opened a support ticket for you (Ticket ID: T-0002). Our team will investigate the delay and follow up with you shortly. \n\nThank you for your patience, and please let us know if you need anything else!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "8": {
+    "id": 8,
+    "category": "order",
+    "message": "order 1044 status",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 2.04,
+    "reply": "Your order (ID: 1044) for the Laptop Stand was delivered yesterday. \n\nLet me know if you need anything else!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "9": {
+    "id": 9,
+    "category": "escalate",
+    "message": "This is the worst service ever, I want to speak to a manager",
+    "expected_tool": "escalate_to_human",
+    "tools_used": [
+      "escalate_to_human"
+    ],
+    "correct": true,
+    "latency_seconds": 2.23,
+    "reply": "I completely understand your frustration, and I am connecting you to a human manager right away who can help you resolve this.",
+    "model": "gemini-flash-lite-latest"
+  },
+  "10": {
+    "id": 10,
+    "category": "escalate",
+    "message": "I want to talk to a real person right now",
+    "expected_tool": "escalate_to_human",
+    "tools_used": [
+      "escalate_to_human"
+    ],
+    "correct": true,
+    "latency_seconds": 1.87,
+    "reply": "I have connected you to a human support agent. Someone will be with you shortly!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "11": {
+    "id": 11,
+    "category": "escalate",
+    "message": "Your company is a scam, I'm going to sue you",
+    "expected_tool": "escalate_to_human",
+    "tools_used": [
+      "escalate_to_human"
+    ],
+    "correct": true,
+    "latency_seconds": 1.71,
+    "reply": "I have connected you with a human support agent who will be able to assist you further right away.",
+    "model": "gemini-flash-lite-latest"
+  },
+  "12": {
+    "id": 12,
+    "category": "escalate",
+    "message": "Get me your supervisor immediately",
+    "expected_tool": "escalate_to_human",
+    "tools_used": [
+      "escalate_to_human"
+    ],
+    "correct": true,
+    "latency_seconds": 1.68,
+    "reply": "I have connected you with a human supervisor who will be with you momentarily. Thank you for your patience!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "13": {
+    "id": 13,
+    "category": "escalate",
+    "message": "I have been waiting for weeks and nobody helps me, this is unacceptable! Escalate this now.",
+    "expected_tool": "escalate_to_human",
+    "tools_used": [
+      "escalate_to_human"
+    ],
+    "correct": true,
+    "latency_seconds": 1.78,
+    "reply": "I completely understand your frustration and apologize for the delay. I have escalated your case to a human support agent who will reach out to you as soon as possible to assist you further.",
+    "model": "gemini-flash-lite-latest"
+  },
+  "14": {
+    "id": 14,
+    "category": "escalate",
+    "message": "I'm extremely angry. Connect me to a human agent.",
+    "expected_tool": "escalate_to_human",
+    "tools_used": [
+      "escalate_to_human"
+    ],
+    "correct": true,
+    "latency_seconds": 1.74,
+    "reply": "I have connected you to a human support agent who will be with you shortly. Thank you for your patience.",
+    "model": "gemini-flash-lite-latest"
+  },
+  "15": {
+    "id": 15,
+    "category": "ticket",
+    "message": "I paid twice for my order, please refund me",
+    "expected_tool": "create_ticket",
+    "tools_used": [
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 1.71,
+    "reply": "I have created a support ticket (Ticket ID: T-0001) for your double charge issue, and our team will look into it and process your refund as quickly as possible. \n\nPlease let me know if you need help with anything else in the meantime!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "16": {
+    "id": 16,
+    "category": "ticket",
+    "message": "My laptop stand arrived broken, I need a replacement",
+    "expected_tool": "create_ticket",
+    "tools_used": [
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 1.77,
+    "reply": "I have created a support ticket (Ticket ID: T-0002) for your broken laptop stand. Our team will review this and get back to you regarding your replacement as soon as possible. \n\nLet me know if there's anything else I can help you with today!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "17": {
+    "id": 17,
+    "category": "ticket",
+    "message": "I was charged twice and my refund hasn't arrived",
+    "expected_tool": "create_ticket",
+    "tools_used": [
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 1.57,
+    "reply": "I have created a support ticket (ID: T-0003) for your double charge and missing refund. Our team will look into this urgently and get back to you as soon as possible. Thank you for your patience!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "18": {
+    "id": 18,
+    "category": "ticket",
+    "message": "The item I received is the wrong color, please raise a ticket",
+    "expected_tool": "create_ticket",
+    "tools_used": [
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 1.67,
+    "reply": "I have successfully raised a support ticket for you (Ticket ID: T-0004) regarding the wrong color item you received. Our team will review it and get back to you soon. \n\nIs there anything else I can help you with today?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "19": {
+    "id": 19,
+    "category": "ticket",
+    "message": "Please open a support ticket for my missing package",
+    "expected_tool": "create_ticket",
+    "tools_used": [
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 1.57,
+    "reply": "I have successfully created a support ticket for your missing package (Ticket ID: T-0005). Our team will look into this and get back to you as soon as possible!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "20": {
+    "id": 20,
+    "category": "ticket",
+    "message": "My refund for a returned phone case has not arrived after 2 weeks",
+    "expected_tool": "create_ticket",
+    "tools_used": [
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 2.6,
+    "reply": "I have created a support ticket (ID: T-0006) for your missing refund on the returned phone case. Our team will look into this and get back to you soon. Let me know if there's anything else I can help with!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "21": {
+    "id": 21,
+    "category": "off_topic",
+    "message": "What's the weather today?",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 0.99,
+    "reply": "I'm sorry, but I can only assist with customer support questions related to your orders, shipping, refunds, and support tickets. I don't have access to weather information. \n\nIs there anything related to your orders or account that I can help you with today?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "22": {
+    "id": 22,
+    "category": "off_topic",
+    "message": "Tell me a joke",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 0.93,
+    "reply": "I'm here to help with your orders, returns, and support questions, but if you need a quick laugh: \n\nWhy don't skeletons fight each other? \nThey don't have the guts! \ud83d\ude04\n\nHow can I help you with your account or orders today?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "23": {
+    "id": 23,
+    "category": "off_topic",
+    "message": "Who is the prime minister of India?",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 1.04,
+    "reply": "I am here to help you with customer support questions related to your orders, shipping, and account issues with our store. For general knowledge questions like the Prime Minister of India, I recommend checking a search engine or encyclopedia. \n\nIs there anything related to your orders or our products that I can help you with today?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "24": {
+    "id": 24,
+    "category": "off_topic",
+    "message": "Write me a Python function to sort a list",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 1.28,
+    "reply": "I'm a customer support assistant for our e-commerce store, so I can't help with writing Python code. However, if you have any questions about your orders, refunds, or items you've purchased, please let me know!",
+    "model": "gemini-flash-lite-latest"
+  },
+  "25": {
+    "id": 25,
+    "category": "off_topic",
+    "message": "hello",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 1.06,
+    "reply": "Hello! Welcome to customer support. How can I help you with your order or account today?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "26": {
+    "id": 26,
+    "category": "vague",
+    "message": "it's not working",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 1.06,
+    "reply": "Could you please tell me a bit more about what's not working, or provide your order number so I can look into it for you?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "27": {
+    "id": 27,
+    "category": "vague",
+    "message": "help",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 0.87,
+    "reply": "I'd be happy to help you! Could you please tell me a bit more about what's going on or what you need assistance with?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "28": {
+    "id": 28,
+    "category": "vague",
+    "message": "I have a problem",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 0.95,
+    "reply": "I'm sorry to hear that you're having a problem! Could you please tell me a bit more about what's going on so I can help you sort it out?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "29": {
+    "id": 29,
+    "category": "vague",
+    "message": "something is wrong with my order",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 0.99,
+    "reply": "Could you please provide your order number and let me know what specific issue you are experiencing with your order?",
+    "model": "gemini-flash-lite-latest"
+  },
+  "30": {
+    "id": 30,
+    "category": "vague",
+    "message": "where is my stuff",
+    "expected_tool": "none",
+    "tools_used": [],
+    "correct": true,
+    "latency_seconds": 0.82,
+    "reply": "Could you please provide your order number so I can check the status of your shipment for you?",
+    "model": "gemini-flash-lite-latest"
+  }
+}

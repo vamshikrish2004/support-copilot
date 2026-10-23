@@ -1,0 +1,36 @@
+[
+  {"id": 1, "category": "order", "message": "Where is my order #1042?", "expected_tool": "check_order_status"},
+  {"id": 2, "category": "order", "message": "Can you check order 1043 for me?", "expected_tool": "check_order_status"},
+  {"id": 3, "category": "order", "message": "Has order #1044 been delivered?", "expected_tool": "check_order_status"},
+  {"id": 4, "category": "order", "message": "Track my order 1042 please", "expected_tool": "check_order_status"},
+  {"id": 5, "category": "order", "message": "What's the status of order #9999?", "expected_tool": "check_order_status"},
+  {"id": 6, "category": "order", "message": "My order #1043 hasn't come yet, when will it arrive?", "expected_tool": "check_order_status"},
+  {"id": 7, "category": "order", "message": "I ordered headphones, order number 1042, where are they?", "expected_tool": "check_order_status"},
+  {"id": 8, "category": "order", "message": "order 1044 status", "expected_tool": "check_order_status"},
+
+  {"id": 9, "category": "escalate", "message": "This is the worst service ever, I want to speak to a manager", "expected_tool": "escalate_to_human"},
+  {"id": 10, "category": "escalate", "message": "I want to talk to a real person right now", "expected_tool": "escalate_to_human"},
+  {"id": 11, "category": "escalate", "message": "Your company is a scam, I'm going to sue you", "expected_tool": "escalate_to_human"},
+  {"id": 12, "category": "escalate", "message": "Get me your supervisor immediately", "expected_tool": "escalate_to_human"},
+  {"id": 13, "category": "escalate", "message": "I have been waiting for weeks and nobody helps me, this is unacceptable! Escalate this now.", "expected_tool": "escalate_to_human"},
+  {"id": 14, "category": "escalate", "message": "I'm extremely angry. Connect me to a human agent.", "expected_tool": "escalate_to_human"},
+
+  {"id": 15, "category": "ticket", "message": "I paid twice for my order, please refund me", "expected_tool": "create_ticket"},
+  {"id": 16, "category": "ticket", "message": "My laptop stand arrived broken, I need a replacement", "expected_tool": "create_ticket"},
+  {"id": 17, "category": "ticket", "message": "I was charged twice and my refund hasn't arrived", "expected_tool": "create_ticket"},
+  {"id": 18, "category": "ticket", "message": "The item I received is the wrong color, please raise a ticket", "expected_tool": "create_ticket"},
+  {"id": 19, "category": "ticket", "message": "Please open a support ticket for my missing package", "expected_tool": "create_ticket"},
+  {"id": 20, "category": "ticket", "message": "My refund for a returned phone case has not arrived after 2 weeks", "expected_tool": "create_ticket"},
+
+  {"id": 21, "category": "off_topic", "message": "What's the weather today?", "expected_tool": "none"},
+  {"id": 22, "category": "off_topic", "message": "Tell me a joke", "expected_tool": "none"},
+  {"id": 23, "category": "off_topic", "message": "Who is the prime minister of India?", "expected_tool": "none"},
+  {"id": 24, "category": "off_topic", "message": "Write me a Python function to sort a list", "expected_tool": "none"},
+  {"id": 25, "category": "off_topic", "message": "hello", "expected_tool": "none"},
+
+  {"id": 26, "category": "vague", "message": "it's not working", "expected_tool": "none"},
+  {"id": 27, "category": "vague", "message": "help", "expected_tool": "none"},
+  {"id": 28, "category": "vague", "message": "I have a problem", "expected_tool": "none"},
+  {"id": 29, "category": "vague", "message": "something is wrong with my order", "expected_tool": "none"},
+  {"id": 30, "category": "vague", "message": "where is my stuff", "expected_tool": "none"}
+]

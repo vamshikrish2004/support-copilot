@@ -1,0 +1,82 @@
+{
+  "1": {
+    "id": 1,
+    "category": "order",
+    "message": "Where is my order #1042?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status",
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 7.0,
+    "reply": "Your order #1042 for **Wireless Headphones** is currently delayed (it was expected 3 days ago). \n\nI have created a support ticket (**T-0001**) for our team to follow up on this delay and get your package to you as soon as possible. Thank you for your patience!",
+    "model": "gemini-3.5-flash"
+  },
+  "2": {
+    "id": 2,
+    "category": "order",
+    "message": "Can you check order 1043 for me?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 3.59,
+    "reply": "Your order #1043 for a Phone Case has been shipped and is expected to be delivered tomorrow. \n\nPlease let me know if you need help with anything else!",
+    "model": "gemini-3.5-flash"
+  },
+  "3": {
+    "id": 3,
+    "category": "order",
+    "message": "Has order #1044 been delivered?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 8.9,
+    "reply": "Yes, order #1044 for the Laptop Stand has been delivered. It was delivered yesterday. \n\nPlease let me know if you need any further assistance!",
+    "model": "gemini-3.5-flash"
+  },
+  "4": {
+    "id": 4,
+    "category": "order",
+    "message": "Track my order 1042 please",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status",
+      "create_ticket"
+    ],
+    "correct": true,
+    "latency_seconds": 41.5,
+    "reply": "Your order #1042 for **Wireless Headphones** is currently **delayed**. The expected delivery date was 3 days ago. \n\nI have opened a support ticket (**Ticket ID: T-0003**) to follow up on this issue and get your delivery back on track. \n\nPlease let me know if you need any further assistance!",
+    "model": "gemini-3.5-flash"
+  },
+  "5": {
+    "id": 5,
+    "category": "order",
+    "message": "What's the status of order #9999?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 4.74,
+    "reply": "I couldn't find any order associated with order number #9999. Please double-check your order number and try again, or let me know if you need help finding it!",
+    "model": "gemini-3.5-flash"
+  },
+  "6": {
+    "id": 6,
+    "category": "order",
+    "message": "My order #1043 hasn't come yet, when will it arrive?",
+    "expected_tool": "check_order_status",
+    "tools_used": [
+      "check_order_status"
+    ],
+    "correct": true,
+    "latency_seconds": 4.21,
+    "reply": "Your order #1043 for the Phone Case has been shipped and is scheduled to arrive tomorrow. \n\nPlease let me know if you need any further assistance!",
+    "model": "gemini-3.5-flash"
+  }
+}
