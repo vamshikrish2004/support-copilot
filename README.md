@@ -10,6 +10,8 @@ An LLM-powered customer-support assistant. It reads a customer message, decides 
 - **Tests:** 8 pytest tests for the tools and API input validation.
 - **Evaluation:** a 30-case test set and an evaluation script that saves results after each case and can resume after quota errors.
 
+![Demo](images/demo.png)
+
 ## Tech stack
 Python, Google Gemini API (`google-genai`), Pydantic, FastAPI, Streamlit, pytest.
 
